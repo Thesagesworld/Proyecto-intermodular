@@ -1,31 +1,36 @@
-import { Header } from '@/components/layout/Header';
-import { Footer } from '@/components/layout/Footer';
-import { Hero } from '@/components/sections/Hero';
-import { Pestel } from '@/components/sections/Pestel';
-import { Dafo } from '@/components/sections/Dafo';
-import { Stats } from '@/components/sections/Stats';
-import { Competencia } from '@/components/sections/Competencia';
-import { Comunicacion } from '@/components/sections/Comunicacion';
-import { Gallery } from '@/components/sections/Gallery';
-import { Conclusiones } from '@/components/sections/Conclusiones';
-import { BackToTopButton } from '@/components/layout/BackToTopButton';
+import Link from 'next/link';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
-      <Header />
-      <main className="flex-1">
-        <Hero />
-        <Pestel />
-        <Dafo />
-        <Stats />
-        <Competencia />
-        <Comunicacion />
-        <Gallery />
-        <Conclusiones />
+    <div className="flex flex-col min-h-screen items-center justify-center text-center bg-background p-4">
+      <main className="flex-1 flex flex-col items-center justify-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-primary">
+          Proyecto Intermodular: Fuengirola
+        </h1>
+        <p className="mt-2 text-lg md:text-xl text-muted-foreground">
+          Análisis turístico y sostenible 2025
+        </p>
+        <Card className="mt-8 max-w-2xl w-full text-center shadow-md">
+          <CardContent className="p-6">
+            <p className="text-muted-foreground">
+              Bitácora desarrollada por <span className="font-semibold text-foreground">María Fernanda Vargas León</span>, alumna de 2º de Guía, Información y Asistencias Turísticas.
+              <br />
+              Proyecto realizado en grupo (4 integrantes).
+              <br />
+              Este espacio recoge mis aportaciones, reflexiones y evolución personal durante el proyecto.
+            </p>
+          </CardContent>
+        </Card>
+        <Link href="/pestel" passHref>
+          <Button className="mt-8" size="lg">
+            Entrar al proyecto
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+        </Link>
       </main>
-      <Footer />
-      <BackToTopButton />
     </div>
   );
 }
