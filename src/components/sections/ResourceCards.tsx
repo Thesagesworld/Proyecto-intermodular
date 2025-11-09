@@ -68,7 +68,7 @@ export function ResourceCards() {
                   <CardTitle className="flex items-start gap-3">
                     {resource.icon}
                     <div className="flex flex-col">
-                        <span>{resource.title}</span>
+                        <span className="text-xl">{resource.title}</span>
                         <span className="text-sm font-normal text-muted-foreground">{resource.category}</span>
                     </div>
                   </CardTitle>
