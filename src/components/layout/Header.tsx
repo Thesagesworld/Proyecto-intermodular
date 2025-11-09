@@ -6,12 +6,12 @@ import { useState } from 'react';
 import {
   Home,
   LayoutList,
-  ShieldCheck,
-  BarChart3,
+  Library,
+  PieChart,
   Users,
-  Megaphone,
-  GalleryVertical,
-  BookCheck,
+  MessageCircle,
+  Image,
+  FileText,
   Menu,
   X,
   Sun,
@@ -22,12 +22,12 @@ import { Button } from '@/components/ui/button';
 const navLinks = [
   { href: '/', label: 'Inicio', icon: <Home /> },
   { href: '/pestel', label: 'PESTEL', icon: <LayoutList /> },
-  { href: '/dafo', label: 'DAFO', icon: <ShieldCheck /> },
-  { href: '/datos', label: 'Datos', icon: <BarChart3 /> },
+  { href: '/dafo', label: 'DAFO', icon: <Library /> },
+  { href: '/datos', label: 'Datos', icon: <PieChart /> },
   { href: '/competencia', label: 'Competencia', icon: <Users /> },
-  { href: '/comunicacion', label: 'Comunicación', icon: <Megaphone /> },
-  { href: '/galeria', label: 'Galería', icon: <GalleryVertical /> },
-  { href: '/conclusiones', label: 'Conclusiones', icon: <BookCheck /> },
+  { href: '/comunicacion', label: 'Comunicación', icon: <MessageCircle /> },
+  { href: '/galeria', label: 'Galería', icon: <Image /> },
+  { href: '/conclusiones', label: 'Conclusiones', icon: <FileText /> },
 ];
 
 export function Header() {
@@ -66,7 +66,7 @@ export function Header() {
               className={cn(
                 'flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors',
                 pathname === link.href
-                  ? 'bg-[hsl(var(--header-accent))] text-[hsl(var(--header-background))]'
+                  ? 'bg-[hsl(var(--header-accent))] text-white'
                   : 'text-[hsl(var(--header-foreground))] hover:bg-[hsl(var(--header-accent))] hover:bg-opacity-20'
               )}
             >
@@ -88,7 +88,12 @@ export function Header() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-[hsl(var(--header-background))]">
+        <div
+          className="md:hidden"
+          style={{
+            backgroundColor: 'hsl(var(--header-background))',
+          }}
+        >
           <nav className="flex flex-col space-y-1 px-2 pb-3 pt-2">
             {navLinks.map((link) => (
               <Link
@@ -98,7 +103,7 @@ export function Header() {
                 className={cn(
                   'flex items-center gap-3 rounded-md px-3 py-2 text-base font-medium',
                   pathname === link.href
-                    ? 'bg-[hsl(var(--header-accent))] text-[hsl(var(--header-background))]'
+                    ? 'bg-[hsl(var(--header-accent))] text-white'
                     : 'text-[hsl(var(--header-foreground))] hover:bg-[hsl(var(--header-accent))] hover:bg-opacity-20'
                 )}
               >
