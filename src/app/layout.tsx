@@ -6,7 +6,6 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { BackToTopButton } from '@/components/layout/BackToTopButton';
-import { headers } from 'next/headers';
 
 export const metadata: Metadata = {
   title: 'Proyecto',
@@ -24,10 +23,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const headersList = headers();
-  const pathname = headersList.get('x-pathname') || '';
-  const isHomePage = pathname === '/';
-
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
@@ -41,12 +36,8 @@ export default function RootLayout({
           <main className="flex-1 pt-16">
             {children}
           </main>
-          {!isHomePage && (
-            <>
-              <Footer />
-              <BackToTopButton />
-            </>
-          )}
+          <Footer />
+          <BackToTopButton />
         </div>
         <Toaster />
       </body>
