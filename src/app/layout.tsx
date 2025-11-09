@@ -9,7 +9,7 @@ import { BackToTopButton } from '@/components/layout/BackToTopButton';
 import { headers } from 'next/headers';
 
 export const metadata: Metadata = {
-  title: 'Proyecto Intermodular',
+  title: 'Proyecto',
   description: 'Análisis turístico y sostenible 2025.',
 };
 
