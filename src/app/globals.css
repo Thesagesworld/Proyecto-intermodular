@@ -14,7 +14,7 @@ body {
     --card-foreground: 224 71% 4%;
     --popover: 0 0% 100%;
     --popover-foreground: 224 71% 4%;
-    --primary: 221 44% 42%; /* #3B82F6 - Accent blue */
+    --primary: 217 91% 60%; /* #3B82F6 - Accent blue */
     --primary-foreground: 210 40% 98%;
     --secondary: 159 11% 47%;
     --secondary-foreground: 0 0% 98%;
@@ -26,7 +26,7 @@ body {
     --destructive-foreground: 0 0% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 221 44% 42%;
+    --ring: 217 91% 60%;
 
     --header-background: 222 60% 28%; /* #1E3A8A - Dark Blue */
     --header-foreground: 0 0% 100%; /* White */
