@@ -1,6 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { BookCheck, Download } from 'lucide-react';
+import { BookCheck } from 'lucide-react';
 
 export function Conclusiones() {
   return (
@@ -25,12 +24,6 @@ export function Conclusiones() {
                 <div className="bg-gray-200 h-4 w-5/6 rounded-md animate-pulse"></div>
                 <div className="bg-gray-200 h-4 w-full rounded-md animate-pulse"></div>
                 <div className="bg-gray-200 h-4 w-4/6 rounded-md animate-pulse"></div>
-            </div>
-            <div className="mt-8 flex justify-end">
-                <Button variant="secondary">
-                    <Download className="mr-2 h-4 w-4" />
-                    Descargar Documentos
-                </Button>
             </div>
           </CardContent>
         </Card>

@@ -5,8 +5,8 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Proyecto Intermodular – Fuengirola',
-  description: 'Análisis Turístico y Desarrollo Sostenible en Fuengirola.',
+  title: 'Proyecto Intermodular: Fuengirola',
+  description: 'Análisis turístico y sostenible 2025.',
 };
 
 const poppins = Poppins({

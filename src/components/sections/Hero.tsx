@@ -19,10 +19,10 @@ export function Hero() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 text-center px-4">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white" style={{color: 'white'}}>
-          Proyecto Intermodular – Fuengirola
+          Proyecto Intermodular: Fuengirola
         </h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-white/90">
-          Análisis Turístico y Desarrollo Sostenible
+          Análisis turístico y sostenible 2025
         </p>
       </div>
     </section>
