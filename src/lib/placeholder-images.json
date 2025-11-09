@@ -1,3 +1,70 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Panoramic view of Zahara de la Sierra, one of the white villages of Andalusia.",
+      "imageUrl": "https://images.unsplash.com/photo-1495653089282-38a5286a8583?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhbmRhbHVzaWElMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzYyNjg4MjUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "andalusia landscape"
+    },
+    {
+      "id": "route-pueblos-blancos",
+      "description": "A picturesque white street in an Andalusian village.",
+      "imageUrl": "https://images.unsplash.com/photo-1681216890796-efba5b9fb801?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3aGl0ZSUyMHZpbGxhZ2V8ZW58MHx8fHwxNzYyNjg4MjUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "white village"
+    },
+    {
+      "id": "route-legado-andalusi",
+      "description": "Courtyard of the Lions in the Alhambra, Granada.",
+      "imageUrl": "https://images.unsplash.com/photo-1601982772202-44c4bd3b943d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhbGhhbWJyYSUyMHBhbGFjZXxlbnwwfHx8fDE3NjI2ODgyNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "alhambra palace"
+    },
+    {
+      "id": "route-vinos",
+      "description": "Vineyards in the Jerez region of Andalusia.",
+      "imageUrl": "https://images.unsplash.com/photo-1687838175952-1f68f1d824ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx2aW5leWFyZCUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NjI2ODgyNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vineyard landscape"
+    },
+    {
+      "id": "resource-mezquita",
+      "description": "The interior of the Mosque-Cathedral of Cordoba.",
+      "imageUrl": "https://images.unsplash.com/photo-1738521905131-30d36f317829?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb3Jkb2JhJTIwbW9zcXVlfGVufDB8fHx8MTc2MjY4ODI1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cordoba mosque"
+    },
+    {
+      "id": "resource-donana",
+      "description": "Flamingos in the Doñana National Park.",
+      "imageUrl": "https://images.unsplash.com/photo-1546450077-c188684eb666?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmbGFtaW5nb3MlMjBwYXJrfGVufDB8fHx8MTc2MjY4ODI1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flamingos park"
+    },
+    {
+      "id": "resource-picasso",
+      "description": "Facade of the Picasso Museum in Malaga.",
+      "imageUrl": "https://images.unsplash.com/photo-1687073356123-5dc01b4cedaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtdXNldW0lMjBmYWNhZGV8ZW58MHx8fHwxNzYyNjg4MjUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "museum facade"
+    },
+    {
+      "id": "gallery-1",
+      "description": "A vibrant flamenco dancer in a traditional dress.",
+      "imageUrl": "https://images.unsplash.com/photo-1603188007510-80bf13490bfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmbGFtZW5jbyUyMGRhbmNlcnxlbnwwfHx8fDE3NjI2ODEzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flamenco dancer"
+    },
+    {
+      "id": "gallery-2",
+      "description": "The Roman Theatre in Merida, showcasing ancient heritage.",
+      "imageUrl": "https://images.unsplash.com/photo-1646496091549-9f207b51c071?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb21hbiUyMHRoZWF0cmV8ZW58MHx8fHwxNzYyNjg4MjUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "roman theatre"
+    },
+    {
+      "id": "gallery-3",
+      "description": "A stunning sunset over a beach in Cadiz.",
+      "imageUrl": "https://images.unsplash.com/photo-1518022525094-218670c9b745?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiZWFjaCUyMHN1bnNldHxlbnwwfHx8fDE3NjI2MTUwNjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beach sunset"
+    },
+    {
+      "id": "gallery-4",
+      "description": "The unique rock formations of the Torcal de Antequera.",
+      "imageUrl": "https://images.unsplash.com/photo-1605999212840-4c6e2c4f8d57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyb2NrJTIwZm9ybWF0aW9uc3xlbnwwfHx8fDE3NjI2ODgyNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rock formations"
+    }
+  ]
 }
