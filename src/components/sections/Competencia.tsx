@@ -13,7 +13,7 @@ export function Competencia() {
             Competencia y Comparativa
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Análisis comparativo de Fuengirola frente a destinos competidores.
+            Análisis comparativo frente a destinos competidores.
           </p>
         </div>
         <Card className="shadow-lg">

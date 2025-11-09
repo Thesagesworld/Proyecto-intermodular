@@ -23,7 +23,7 @@ export function Stats() {
             Datos y Estadísticas
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Indicadores clave del rendimiento turístico de Fuengirola, desde el macroentorno al microentorno.
+            Indicadores clave del rendimiento turístico, desde el macroentorno al microentorno.
           </p>
         </div>
 
