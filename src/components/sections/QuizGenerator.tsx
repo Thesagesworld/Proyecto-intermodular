@@ -32,7 +32,7 @@ export function QuizGenerator() {
   const form = useForm<QuizFormValues>({
     resolver: zodResolver(quizFormSchema),
     defaultValues: {
-      topic: 'Cultura de Andalucía',
+      topic: 'Cultura de Benalmádena',
       difficulty: 'medium',
       format: 'multiple choice',
       numberOfQuestions: 5,
@@ -71,7 +71,7 @@ export function QuizGenerator() {
             Generador de Cuestionarios Turísticos
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Pon a prueba tus conocimientos sobre Andalucía con un cuestionario personalizado por IA.
+            Pon a prueba tus conocimientos sobre la zona con un cuestionario personalizado por IA.
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
@@ -90,7 +90,7 @@ export function QuizGenerator() {
                       <FormItem>
                         <FormLabel>Tema</FormLabel>
                         <FormControl>
-                          <Input placeholder="Ej: Gastronomía de Sevilla" {...field} />
+                          <Input placeholder="Ej: Gastronomía de Málaga" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>

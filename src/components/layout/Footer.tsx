@@ -8,9 +8,9 @@ export function Footer() {
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Proyecto Intermodular</h3>
+            <h3 className="text-lg font-semibold mb-4">Turismo Benalmádena</h3>
             <p className="text-sm text-muted-foreground">
-              Una plataforma educativa para explorar la riqueza cultural y natural de Andalucía.
+              Tu guía para explorar Arroyo de la Miel, Benalmádena y Málaga.
             </p>
           </div>
           <div>
@@ -25,7 +25,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contacto</h3>
             <p className="text-sm text-muted-foreground">
-              info@turismoandalucia.es
+              info@turismobenalmadena.es
               <br />
               +34 123 456 789
             </p>
@@ -47,7 +47,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t mt-8 pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Proyecto Intermodular. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Turismo Benalmádena. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

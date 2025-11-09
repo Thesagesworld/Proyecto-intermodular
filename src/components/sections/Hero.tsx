@@ -21,10 +21,10 @@ export function Hero() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 text-center px-4">
         <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight">
-          Descubre la Magia de Andalucía
+          Vive Benalmádena y Málaga
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/90">
-          Un viaje por el corazón del sur de España, explorando su cultura, historia y paisajes inolvidables.
+          Un viaje por la Costa del Sol, explorando su cultura, playas y rincones inolvidables.
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Button size="lg">

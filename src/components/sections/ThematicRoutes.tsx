@@ -7,22 +7,22 @@ import { Badge } from '@/components/ui/badge';
 
 const routes = [
   {
-    title: 'Ruta de los Pueblos Blancos',
-    description: 'Recorre los encantadores pueblos de fachadas encaladas y calles floridas.',
-    imageId: 'route-pueblos-blancos',
-    tags: ['Cultura', 'Paisaje'],
+    title: 'Ruta por Arroyo de la Miel',
+    description: 'Explora el corazón de Benalmádena, su cultura y su gente.',
+    imageId: 'route-arroyo-miel',
+    tags: ['Cultura', 'Urbano'],
   },
   {
-    title: 'Ruta del Legado Andalusí',
-    description: 'Descubre la herencia islámica a través de monumentos impresionantes.',
-    imageId: 'route-legado-andalusi',
-    tags: ['Historia', 'Arquitectura'],
+    title: 'Paseo Marítimo de Benalmádena',
+    description: 'Disfruta de las playas, chiringuitos y el ambiente de la costa.',
+    imageId: 'route-benalmadena-costa',
+    tags: ['Playa', 'Ocio'],
   },
   {
-    title: 'Ruta de los Vinos de Jerez',
-    description: 'Sumérgete en la tradición vinícola de la región, visitando bodegas centenarias.',
-    imageId: 'route-vinos',
-    tags: ['Gastronomía', 'Tradición'],
+    title: 'Centro Histórico de Málaga',
+    description: 'Piérdete por las calles llenas de historia, museos y gastronomía.',
+    imageId: 'route-malaga-centro',
+    tags: ['Historia', 'Gastronomía'],
   },
 ];
 
@@ -32,10 +32,10 @@ export function ThematicRoutes() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">
-            Rutas Temáticas Inolvidables
+            Rutas Temáticas por la Zona
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Experiencias inmersivas diseñadas para mostrarte lo mejor de Andalucía.
+            Experiencias diseñadas para mostrarte lo mejor de Benalmádena y Málaga.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

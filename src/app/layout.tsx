@@ -5,8 +5,8 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Proyecto Intermodular - Turismo en Andalucía',
-  description: 'Descubre las maravillas de Andalucía con nuestras rutas temáticas, recursos educativos y mucho más.',
+  title: 'Turismo en Benalmádena y Málaga',
+  description: 'Descubre las maravillas de Arroyo de la Miel, Benalmádena y Málaga con nuestras rutas, recursos y más.',
 };
 
 const poppins = Poppins({

@@ -16,7 +16,7 @@ export function Header() {
           <a href="/" className="mr-6 flex items-center space-x-2">
             <Mountain className="h-6 w-6 text-primary" />
             <span className="font-bold sm:inline-block text-lg">
-              Proyecto Intermodular
+              Turismo Benalmádena
             </span>
           </a>
         </div>

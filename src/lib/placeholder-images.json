@@ -2,27 +2,27 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Panoramic view of Zahara de la Sierra, one of the white villages of Andalusia.",
-      "imageUrl": "https://images.unsplash.com/photo-1495653089282-38a5286a8583?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhbmRhbHVzaWElMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzYyNjg4MjUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "andalusia landscape"
+      "description": "Panoramic view of Benalmadena coast.",
+      "imageUrl": "https://images.unsplash.com/photo-1623171815293-195b4a814197?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZW5hbG1hZGVuYSUyMGFua2FufGVufDB8fHx8MTc2MzA3NzI3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "benalmadena coast"
     },
     {
-      "id": "route-pueblos-blancos",
-      "description": "A picturesque white street in an Andalusian village.",
-      "imageUrl": "https://images.unsplash.com/photo-1681216890796-efba5b9fb801?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3aGl0ZSUyMHZpbGxhZ2V8ZW58MHx8fHwxNzYyNjg4MjUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "white village"
+      "id": "route-arroyo-miel",
+      "description": "A bustling street in Arroyo de la Miel.",
+      "imageUrl": "https://images.unsplash.com/photo-1610905819271-4b5c4675f4e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhcnJveW8lMjBkZSUyMGxhJTIwbWllbCUyMHN0cmVldHxlbnwwfHx8fDE3NjI2ODg1NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "arroyo de la miel street"
     },
     {
-      "id": "route-legado-andalusi",
-      "description": "Courtyard of the Lions in the Alhambra, Granada.",
-      "imageUrl": "https://images.unsplash.com/photo-1601982772202-44c4bd3b943d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhbGhhbWJyYSUyMHBhbGFjZXxlbnwwfHx8fDE3NjI2ODgyNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "alhambra palace"
+      "id": "route-benalmadena-costa",
+      "description": "Benalmadena's vibrant seafront promenade.",
+      "imageUrl": "https://images.unsplash.com/photo-1598939918231-3c480113524b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZW5hbG1hZGVuYSUyMHNlYWZyb250fGVufDB8fHx8MTc2MzA3NzM0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "benalmadena seafront"
     },
     {
-      "id": "route-vinos",
-      "description": "Vineyards in the Jerez region of Andalusia.",
-      "imageUrl": "https://images.unsplash.com/photo-1687838175952-1f68f1d824ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx2aW5leWFyZCUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NjI2ODgyNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "vineyard landscape"
+      "id": "route-malaga-centro",
+      "description": "Historic Calle Larios in the center of Málaga.",
+      "imageUrl": "https://images.unsplash.com/photo-1579281783427-463c5a498066?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWxhZ2ElMjBjZW50ZXJ8ZW58MHx8fHwxNzYzMDc3Mzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "malaga center"
     },
     {
       "id": "resource-mezquita",
