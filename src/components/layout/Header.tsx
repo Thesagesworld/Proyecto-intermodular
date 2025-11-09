@@ -34,12 +34,6 @@ export function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const isHomePage = pathname === '/';
-
-  if (isHomePage) {
-    return null; // Don't render header on the homepage
-  }
-
   return (
     <header
       className="fixed top-0 z-50 w-full"
