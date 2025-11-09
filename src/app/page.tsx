@@ -1,12 +1,14 @@
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Hero } from '@/components/sections/Hero';
-import { ThematicRoutes } from '@/components/sections/ThematicRoutes';
-import { ResourceCards } from '@/components/sections/ResourceCards';
-import { QuizGenerator } from '@/components/sections/QuizGenerator';
-import { EducationalResources } from '@/components/sections/EducationalResources';
+import { Pestel } from '@/components/sections/Pestel';
+import { Dafo } from '@/components/sections/Dafo';
+import { Stats } from '@/components/sections/Stats';
+import { Competencia } from '@/components/sections/Competencia';
+import { Comunicacion } from '@/components/sections/Comunicacion';
 import { Gallery } from '@/components/sections/Gallery';
-import { DownloadableContent } from '@/components/sections/DownloadableContent';
+import { Conclusiones } from '@/components/sections/Conclusiones';
+import { BackToTopButton } from '@/components/layout/BackToTopButton';
 
 export default function Home() {
   return (
@@ -14,14 +16,16 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <ThematicRoutes />
-        <ResourceCards />
-        <QuizGenerator />
-        <EducationalResources />
+        <Pestel />
+        <Dafo />
+        <Stats />
+        <Competencia />
+        <Comunicacion />
         <Gallery />
-        <DownloadableContent />
+        <Conclusiones />
       </main>
       <Footer />
+      <BackToTopButton />
     </div>
   );
 }

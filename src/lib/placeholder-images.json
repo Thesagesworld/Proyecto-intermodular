@@ -1,70 +1,10 @@
 {
   "placeholderImages": [
     {
-      "id": "hero",
-      "description": "Panoramic view of Benalmadena coast.",
-      "imageUrl": "https://images.unsplash.com/photo-1623171815293-195b4a814197?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZW5hbG1hZGVuYSUyMGFua2FufGVufDB8fHx8MTc2MzA3NzI3OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "benalmadena coast"
-    },
-    {
-      "id": "route-arroyo-miel",
-      "description": "A bustling street in Arroyo de la Miel.",
-      "imageUrl": "https://images.unsplash.com/photo-1610905819271-4b5c4675f4e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhcnJveW8lMjBkZSUyMGxhJTIwbWllbCUyMHN0cmVldHxlbnwwfHx8fDE3NjI2ODg1NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "arroyo de la miel street"
-    },
-    {
-      "id": "route-benalmadena-costa",
-      "description": "Benalmadena's vibrant seafront promenade.",
-      "imageUrl": "https://images.unsplash.com/photo-1598939918231-3c480113524b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZW5hbG1hZGVuYSUyMHNlYWZyb250fGVufDB8fHx8MTc2MzA3NzM0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "benalmadena seafront"
-    },
-    {
-      "id": "route-malaga-centro",
-      "description": "Historic Calle Larios in the center of Málaga.",
-      "imageUrl": "https://images.unsplash.com/photo-1579281783427-463c5a498066?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWxhZ2ElMjBjZW50ZXJ8ZW58MHx8fHwxNzYzMDc3Mzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "malaga center"
-    },
-    {
-      "id": "resource-mezquita",
-      "description": "The interior of the Mosque-Cathedral of Cordoba.",
-      "imageUrl": "https://images.unsplash.com/photo-1738521905131-30d36f317829?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb3Jkb2JhJTIwbW9zcXVlfGVufDB8fHx8MTc2MjY4ODI1MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cordoba mosque"
-    },
-    {
-      "id": "resource-donana",
-      "description": "Flamingos in the Doñana National Park.",
-      "imageUrl": "https://images.unsplash.com/photo-1546450077-c188684eb666?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmbGFtaW5nb3MlMjBwYXJrfGVufDB8fHx8MTc2MjY4ODI1MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "flamingos park"
-    },
-    {
-      "id": "resource-picasso",
-      "description": "Facade of the Picasso Museum in Malaga.",
-      "imageUrl": "https://images.unsplash.com/photo-1687073356123-5dc01b4cedaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtdXNldW0lMjBmYWNhZGV8ZW58MHx8fHwxNzYyNjg4MjUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "museum facade"
-    },
-    {
-      "id": "gallery-1",
-      "description": "A vibrant flamenco dancer in a traditional dress.",
-      "imageUrl": "https://images.unsplash.com/photo-1603188007510-80bf13490bfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmbGFtZW5jbyUyMGRhbmNlcnxlbnwwfHx8fDE3NjI2ODEzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "flamenco dancer"
-    },
-    {
-      "id": "gallery-2",
-      "description": "The Roman Theatre in Merida, showcasing ancient heritage.",
-      "imageUrl": "https://images.unsplash.com/photo-1646496091549-9f207b51c071?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb21hbiUyMHRoZWF0cmV8ZW58MHx8fHwxNzYyNjg4MjUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "roman theatre"
-    },
-    {
-      "id": "gallery-3",
-      "description": "A stunning sunset over a beach in Cadiz.",
-      "imageUrl": "https://images.unsplash.com/photo-1518022525094-218670c9b745?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiZWFjaCUyMHN1bnNldHxlbnwwfHx8fDE3NjI2MTUwNjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "beach sunset"
-    },
-    {
-      "id": "gallery-4",
-      "description": "The unique rock formations of the Torcal de Antequera.",
-      "imageUrl": "https://images.unsplash.com/photo-1605999212840-4c6e2c4f8d57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyb2NrJTIwZm9ybWF0aW9uc3xlbnwwfHx8fDE3NjI2ODgyNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "rock formations"
+      "id": "hero-fuengirola",
+      "description": "Panoramic view of Fuengirola coast.",
+      "imageUrl": "https://images.unsplash.com/photo-1620392183893-243b6d05323a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmdWVuZ2lyb2xhJTIwc2Vhc2lkZXxlbnwwfHx8fDE3NjMwNzc0ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fuengirola seaside"
     }
   ]
 }
