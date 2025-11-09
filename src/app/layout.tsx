@@ -37,8 +37,8 @@ export default function RootLayout({
       </head>
       <body className={cn('font-body antialiased bg-background', poppins.variable)}>
         <div className="flex flex-col min-h-screen">
-          {!isHomePage && <Header />}
-          <main className="flex-1">
+          <Header />
+          <main className={cn("flex-1", !isHomePage && "pt-16")}>
             {children}
           </main>
           {!isHomePage && (

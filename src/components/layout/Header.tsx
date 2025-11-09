@@ -1,36 +1,114 @@
+'use client';
+
 import Link from 'next/link';
-import { Sun } from 'lucide-react';
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
+import {
+  Home,
+  LayoutList,
+  ShieldCheck,
+  BarChart3,
+  Users,
+  Megaphone,
+  GalleryVertical,
+  BookCheck,
+  Menu,
+  X,
+  Sun,
+} from 'lucide-react';
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
 
 const navLinks = [
-  { href: '/pestel', label: 'PESTEL' },
-  { href: '/dafo', label: 'DAFO' },
-  { href: '/datos', label: 'Datos' },
-  { href: '/competencia', label: 'Competencia' },
-  { href: '/comunicacion', label: 'Comunicación' },
-  { href: '/galeria', label: 'Galería' },
-  { href: '/conclusiones', label: 'Conclusiones' },
+  { href: '/', label: 'Inicio', icon: <Home /> },
+  { href: '/pestel', label: 'PESTEL', icon: <LayoutList /> },
+  { href: '/dafo', label: 'DAFO', icon: <ShieldCheck /> },
+  { href: '/datos', label: 'Datos', icon: <BarChart3 /> },
+  { href: '/competencia', label: 'Competencia', icon: <Users /> },
+  { href: '/comunicacion', label: 'Comunicación', icon: <Megaphone /> },
+  { href: '/galeria', label: 'Galería', icon: <GalleryVertical /> },
+  { href: '/conclusiones', label: 'Conclusiones', icon: <BookCheck /> },
 ];
 
 export function Header() {
+  const pathname = usePathname();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const isHomePage = pathname === '/';
+
+  if (isHomePage) {
+    return null; // Don't render header on the homepage
+  }
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 max-w-screen-2xl items-center">
-        <div className="mr-4 flex items-center">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Sun className="h-6 w-6 text-primary" />
-            <span className="font-bold sm:inline-block text-lg">
-              Proyecto
-            </span>
-          </Link>
-        </div>
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-          {navLinks.map(link => (
-            <Link key={link.href} href={link.href} className="transition-colors hover:text-primary">
-              {link.label}
+    <header
+      className="fixed top-0 z-50 w-full"
+      style={{
+        backgroundColor: 'hsla(var(--header-background), 0.8)',
+        backdropFilter: 'blur(8px)',
+        WebkitBackdropFilter: 'blur(8px)',
+      }}
+    >
+      <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
+        <Link
+          href="/"
+          className="flex items-center space-x-2 text-[hsl(var(--header-foreground))] transition-colors hover:text-[hsl(var(--header-accent))]"
+        >
+          <Sun className="h-6 w-6" />
+          <span className="font-bold sm:inline-block text-lg">Proyecto</span>
+        </Link>
+
+        <nav className="hidden md:flex items-center space-x-2">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                'flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors',
+                pathname === link.href
+                  ? 'bg-[hsl(var(--header-accent))] text-[hsl(var(--header-background))]'
+                  : 'text-[hsl(var(--header-foreground))] hover:bg-[hsl(var(--header-accent))] hover:bg-opacity-20'
+              )}
+            >
+              {link.icon}
+              <span>{link.label}</span>
             </Link>
           ))}
         </nav>
+
+        <Button
+          variant="ghost"
+          size="icon"
+          className="md:hidden text-[hsl(var(--header-foreground))] hover:bg-[hsl(var(--header-accent))] hover:bg-opacity-20"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? <X /> : <Menu />}
+          <span className="sr-only">Toggle menu</span>
+        </Button>
       </div>
+
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-[hsl(var(--header-background))]">
+          <nav className="flex flex-col space-y-1 px-2 pb-3 pt-2">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={cn(
+                  'flex items-center gap-3 rounded-md px-3 py-2 text-base font-medium',
+                  pathname === link.href
+                    ? 'bg-[hsl(var(--header-accent))] text-[hsl(var(--header-background))]'
+                    : 'text-[hsl(var(--header-foreground))] hover:bg-[hsl(var(--header-accent))] hover:bg-opacity-20'
+                )}
+              >
+                {link.icon}
+                <span>{link.label}</span>
+              </Link>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
