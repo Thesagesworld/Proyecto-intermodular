@@ -49,7 +49,7 @@ export function Header() {
           className="flex items-center space-x-2 text-[hsl(var(--header-foreground))] transition-colors hover:text-[hsl(var(--header-accent))]"
         >
           <Sun className="h-6 w-6" />
-          <span className="font-bold sm:inline-block text-lg">Proyecto</span>
+          <span className="font-bold sm:inline-block text-lg">Proyecto Fuengirola</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-2">

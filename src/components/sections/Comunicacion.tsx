@@ -16,7 +16,7 @@ export function Comunicacion() {
             Estrategias de Comunicación
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Plan de promoción y difusión.
+            Plan de promoción y difusión para Fuengirola.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

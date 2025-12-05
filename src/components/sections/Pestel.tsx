@@ -19,7 +19,7 @@ export function Pestel() {
             Análisis PESTEL
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Contexto macroeconómico.
+            Contexto macroeconómico de Fuengirola.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
