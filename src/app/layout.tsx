@@ -8,8 +8,8 @@ import { Footer } from '@/components/layout/Footer';
 import { BackToTopButton } from '@/components/layout/BackToTopButton';
 
 export const metadata: Metadata = {
-  title: 'Proyecto Fuengirola',
-  description: 'Análisis turístico y sostenible 2025 en Fuengirola.',
+  title: 'Proyecto Intermodular',
+  description: 'Análisis turístico y sostenible 2025.',
 };
 
 const poppins = Poppins({

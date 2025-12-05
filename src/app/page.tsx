@@ -8,7 +8,7 @@ export default function Home() {
     <div className="flex flex-col min-h-[calc(100vh-4rem)] items-center justify-center text-center bg-background p-4">
       <main className="flex-1 flex flex-col items-center justify-center">
         <h1 className="text-4xl md:text-5xl font-bold text-primary">
-          Proyecto Fuengirola
+          Proyecto Intermodular
         </h1>
         <p className="mt-2 text-lg md:text-xl text-muted-foreground">
           Análisis turístico y sostenible 2025

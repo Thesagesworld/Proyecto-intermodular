@@ -17,7 +17,7 @@ export function Dafo() {
             Análisis DAFO
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Diagnóstico estratégico para Fuengirola.
+            Diagnóstico estratégico del destino.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
