@@ -2,7 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 
-const competitors = ['Málaga', 'Benalmádena', 'Mijas', 'Torremolinos'];
+const competitors = ['Benalmádena', 'Mijas', 'Torremolinos'];
 
 export function Competencia() {
   return (
@@ -18,7 +18,7 @@ export function Competencia() {
         </div>
         <Card className="shadow-lg">
           <CardContent className="p-0">
-             <div className="grid grid-cols-5 items-center text-center font-semibold">
+             <div className="grid grid-cols-4 items-center text-center font-semibold">
                 <div className="p-4"><Badge variant="default" className="bg-primary text-primary-foreground text-base">Fuengirola</Badge></div>
                 {competitors.map((city) => (
                     <div key={city} className="p-4 text-muted-foreground">{city}</div>
@@ -26,12 +26,11 @@ export function Competencia() {
             </div>
             <Separator />
             {Array(4).fill(0).map((_, index) => (
-                 <div key={index} className="grid grid-cols-5 items-center text-center border-b last:border-b-0">
+                 <div key={index} className="grid grid-cols-4 items-center text-center border-b last:border-b-0">
                     <div className="p-4 bg-gray-100 h-10 w-full animate-pulse"></div>
                     <div className="p-4 bg-gray-50 h-10 w-full animate-pulse"></div>
                     <div className="p-4 bg-gray-100 h-10 w-full animate-pulse"></div>
                     <div className="p-4 bg-gray-50 h-10 w-full animate-pulse"></div>
-                    <div className="p-4 bg-gray-100 h-10 w-full animate-pulse"></div>
                 </div>
             ))}
           </CardContent>

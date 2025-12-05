@@ -103,7 +103,6 @@ export function Stats() {
                       <li>Adolfo Suárez Madrid-Barajas</li>
                       <li>Josep Tarradellas Barcelona-El Prat</li>
                       <li>Palma de Mallorca</li>
-                      <li className="font-semibold text-foreground">Málaga-Costa del Sol</li>
                   </ul>
               </CardContent>
             </Card>
@@ -142,7 +141,7 @@ export function Stats() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="p-6 border rounded-lg bg-accent/20">
                     <h3 className="font-semibold text-lg text-primary mb-2">Identificación de mercados emisores</h3>
-                    <p className="text-muted-foreground">Se utilizan análisis de datos para identificar las ciudades emisoras con mayor potencial para viajar al destino Málaga Costa del Sol, optimizando las campañas de marketing.</p>
+                    <p className="text-muted-foreground">Se utilizan análisis de datos para identificar las ciudades emisoras con mayor potencial para viajar a la Costa del Sol, optimizando las campañas de marketing.</p>
                 </div>
                  <div className="p-6 border rounded-lg bg-accent/20">
                     <h3 className="font-semibold text-lg text-primary mb-2">Gasto Turístico (EGATUR)</h3>
