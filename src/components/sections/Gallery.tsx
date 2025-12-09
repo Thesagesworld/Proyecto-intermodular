@@ -1,9 +1,19 @@
+import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
-import { Plus } from 'lucide-react';
-
-const galleryItems = Array(8).fill(0);
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Gallery() {
+  const fodaImage = PlaceHolderImages.find((img) => img.id === 'foda-analysis');
+  const galleryPlaceholders = Array(7).fill(0).map((_, i) => ({
+    id: `gallery-placeholder-${i}`,
+    description: `Placeholder image ${i + 1}`,
+    imageUrl: `https://picsum.photos/seed/${10 + i}/600/600`,
+    imageHint: "placeholder image"
+  }));
+
+  const galleryItems = fodaImage ? [fodaImage, ...galleryPlaceholders] : galleryPlaceholders;
+
+
   return (
     <section id="gallery" className="py-16 sm:py-24 bg-accent/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,11 +26,21 @@ export function Gallery() {
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {galleryItems.map((_, index) => (
-            <Card key={index} className="overflow-hidden group">
+          {galleryItems.map((item, index) => (
+            <Card key={item.id} className="overflow-hidden group">
               <CardContent className="flex aspect-square items-center justify-center p-0 bg-background hover:bg-card transition-colors">
-                 <div className="relative h-full w-full flex items-center justify-center">
-                    <Plus className="h-8 w-8 text-muted-foreground group-hover:text-primary transition-colors" />
+                 <div className="relative h-full w-full">
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.description}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      data-ai-hint={item.imageHint}
+                      sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 25vw"
+                    />
+                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <p className="text-white text-center p-2 text-sm">{item.description}</p>
+                    </div>
                  </div>
               </CardContent>
             </Card>

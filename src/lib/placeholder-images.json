@@ -5,6 +5,12 @@
       "description": "Panoramic view of Fuengirola coast.",
       "imageUrl": "https://images.unsplash.com/photo-1620392183893-243b6d05323a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmdWVuZ2lyb2xhJTIwc2Vhc2lkZXxlbnwwfHx8fDE3NjMwNzc0ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "fuengirola seaside"
+    },
+    {
+      "id": "foda-analysis",
+      "description": "Imagen del análisis FODA para Fuengirola.",
+      "imageUrl": "https://storage.googleapis.com/stabl-media/6945532598377545969/6945595350354108657.png",
+      "imageHint": "analysis chart"
     }
   ]
 }
