@@ -10,7 +10,7 @@ export function Competencia() {
             Competencia y Comparativa
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Aquí realizo un análisis comparativo de Fuengirola frente a sus destinos competidores.
+            Aquí realizo un análisis comparativo de Benalmádena frente a sus destinos competidores.
           </p>
         </div>
         <Card className="shadow-lg">
@@ -18,11 +18,11 @@ export function Competencia() {
             <div className="grid grid-cols-4 items-center text-center font-semibold text-lg">
               <div className="p-4 border-b">
                 <Badge variant="default" className="bg-primary text-primary-foreground text-base">
-                  Fuengirola
+                  Benalmádena
                 </Badge>
               </div>
               <div className="p-4 border-b text-muted-foreground">
-                Benalmádena
+                Fuengirola
               </div>
               <div className="p-4 border-b text-muted-foreground">
                 Mijas

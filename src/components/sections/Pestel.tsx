@@ -23,7 +23,7 @@ const pestelFactors = [
           <CardContent className="space-y-3">
             <div>
               <h4 className="font-semibold text-foreground mb-1">Estabilidad y Regulación</h4>
-              <p>Contexto político estable, pero con tensiones en la regulación de viviendas de uso turístico (VUT), generando cambios normativos frecuentes.</p>
+              <p>Contexto político estable en Benalmádena, pero con tensiones en la regulación de viviendas de uso turístico (VUT), generando cambios normativos frecuentes.</p>
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-1">Acuerdos Internacionales</h4>
@@ -51,7 +51,7 @@ const pestelFactors = [
             <p><strong className="text-foreground">Normas de Calidad:</strong> Obligatoriedad de inscripción en el Registro de Turismo de Andalucía (RTA) y cumplimiento de estándares de calidad y accesibilidad.</p>
             <p><strong className="text-foreground">Regulación Medioambiental:</strong> Adaptación a normativas de protección de espacios, gestión de residuos y sostenibilidad.</p>
              <p><strong className="text-foreground">Seguridad y Accesibilidad:</strong> Leyes que garantizan espacios accesibles para todos y normativas de seguridad (incendios, aforo).</p>
-             <p><strong className="text-foreground">Regulación Específica:</strong> Control sobre VUT y agencias de viajes para proteger al consumidor y ordenar el mercado.</p>
+             <p><strong className="text-foreground">Regulación Específica:</strong> Control sobre VUT y agencias de viajes para proteger al consumidor y ordenar el mercado en Benalmádena.</p>
           </CardContent>
         </Card>
       </div>
@@ -88,7 +88,7 @@ const pestelFactors = [
                             <p className="text-sm text-muted-foreground">A pesar de la mejora en la afiliación laboral, sigue siendo un desafío clave.</p>
                         </div>
                     </div>
-                    <p className="text-muted-foreground pt-4">Andalucía es la tercera economía de España (13,3% del PIB nacional) y la región más poblada. El turismo tiene un gran peso, aunque con menor dependencia del visitante internacional que la media nacional.</p>
+                    <p className="text-muted-foreground pt-4">Andalucía es la tercera economía de España (13,3% del PIB nacional) y la región más poblada. El turismo tiene un gran peso, con Benalmádena como uno de sus exponentes, aunque con menor dependencia del visitante internacional que la media nacional.</p>
                      <div className="text-sm flex gap-4 mt-4">
                         <a href="https://www.caixabankresearch.com/es/publicaciones/fichas-comunidades-autonomas/andalucia" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-primary hover:underline">
                             <ExternalLink className="h-4 w-4" /> CaixaBank Research
@@ -109,7 +109,7 @@ const pestelFactors = [
         <div className="space-y-4 text-muted-foreground">
              <Card>
                 <CardHeader>
-                    <CardTitle className="text-xl">Perfil del Turista y Comportamiento</CardTitle>
+                    <CardTitle className="text-xl">Perfil del Turista y Comportamiento en Benalmádena</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                     <p><strong className="text-foreground">Carácter Internacional:</strong> Fuerte presencia de turistas del Reino Unido, seguidos de españoles, nórdicos y franceses.</p>
@@ -142,7 +142,7 @@ const pestelFactors = [
           <CardContent className="space-y-4">
              <div className="flex items-start gap-4">
                 <CheckCircle className="h-5 w-5 text-green-600 mt-1" />
-                <p>Alto grado de digitalización en hoteles y restaurantes mediante webs, apps y códigos QR para facilitar reservas e información interactiva.</p>
+                <p>Alto grado de digitalización en hoteles y restaurantes de Benalmádena mediante webs, apps y códigos QR para facilitar reservas e información interactiva.</p>
              </div>
              <div className="flex items-start gap-4">
                 <CheckCircle className="h-5 w-5 text-green-600 mt-1" />
@@ -167,8 +167,8 @@ const pestelFactors = [
                     <CardTitle className="text-xl">Desafíos Climáticos y de Recursos</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                    <p><strong className="text-foreground">Desertización y Contaminación:</strong> España, especialmente el sur, enfrenta un riesgo severo de desertización y problemas de contaminación del agua.</p>
-                    <p><strong className="text-foreground">Crisis Hídrica en Andalucía:</strong> Seis años de sequía han dejado los embalses a un 21% de capacidad, llevando a restricciones que afectan directamente al sector turístico (piscinas, duchas, riego).</p>
+                    <p><strong className="text-foreground">Desertización y Contaminación:</strong> El sur de España, incluyendo la Costa del Sol, enfrenta un riesgo severo de desertización y problemas de contaminación del agua.</p>
+                    <p><strong className="text-foreground">Crisis Hídrica en Andalucía:</strong> Seis años de sequía han dejado los embalses a un 21% de capacidad, llevando a restricciones que afectan directamente al sector turístico (piscinas, duchas, riego) en Benalmádena.</p>
                     <p><strong className="text-foreground">Presión Agrícola:</strong> La expansión de cultivos subtropicales como el aguacate en la Axarquía agrava la escasez de agua.</p>
                     <p><strong className="text-foreground">Cambio Climático:</strong> Fenómenos meteorológicos extremos intensifican los problemas, convirtiendo la gestión del agua en una prioridad crítica.</p>
                 </CardContent>
@@ -187,7 +187,7 @@ export function Pestel() {
             Análisis PESTEL
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-            En mi análisis, estudio cómo los factores políticos, económicos, socioculturales, tecnológicos y medioambientales influyen en el macroentorno del destino.
+            En mi análisis, estudio cómo los factores políticos, económicos, socioculturales, tecnológicos y medioambientales influyen en el macroentorno del destino (Benalmádena).
           </p>
         </div>
         <Accordion type="single" collapsible className="w-full max-w-4xl mx-auto">
