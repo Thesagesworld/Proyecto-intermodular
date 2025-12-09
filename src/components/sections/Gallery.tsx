@@ -4,14 +4,8 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Gallery() {
   const fodaImage = PlaceHolderImages.find((img) => img.id === 'foda-analysis');
-  const galleryPlaceholders = Array(7).fill(0).map((_, i) => ({
-    id: `gallery-placeholder-${i}`,
-    description: `Placeholder image ${i + 1}`,
-    imageUrl: `https://picsum.photos/seed/${10 + i}/600/600`,
-    imageHint: "placeholder image"
-  }));
-
-  const galleryItems = fodaImage ? [fodaImage, ...galleryPlaceholders] : galleryPlaceholders;
+  
+  const galleryItems = fodaImage ? [fodaImage] : [];
 
 
   return (
