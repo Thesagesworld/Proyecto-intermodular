@@ -22,7 +22,7 @@ import { Button } from '@/components/ui/button';
 const navLinks = [
   { href: '/', label: 'Inicio', icon: <Home /> },
   { href: '/pestel', label: 'PESTEL', icon: <LayoutList /> },
-  { href: '/dafo', label: 'DAFO', icon: <Library /> },
+  { href: '/foda', label: 'FODA', icon: <Library /> },
   { href: '/datos', label: 'Datos', icon: <PieChart /> },
   { href: '/competencia', label: 'Competencia', icon: <Users /> },
   { href: '/comunicacion', label: 'Comunicación', icon: <MessageCircle /> },
