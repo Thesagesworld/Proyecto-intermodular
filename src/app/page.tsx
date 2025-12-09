@@ -32,7 +32,7 @@ export default function Home() {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground">
-             Este proyecto nace de la necesidad de analizar en profundidad un destino turístico local desde una perspectiva integral. He elegido Fuengirola para aplicar los conocimientos adquiridos durante mi formación, abordando desde su macroentorno con un análisis PESTEL hasta su microentorno con un FODA. El objetivo es desgranar sus fortalezas, identificar áreas de mejora y proponer estrategias de comunicación que impulsen su competitividad de manera sostenible. Esta bitácora es el reflejo de ese proceso de investigación y análisis.
+             
             </p>
           </CardContent>
         </Card>
