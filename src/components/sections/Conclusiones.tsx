@@ -10,7 +10,7 @@ export function Conclusiones() {
             Conclusiones y Reflexión
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Síntesis final del análisis y próximos pasos.
+            Aquí presento la síntesis final de mi análisis y los próximos pasos.
           </p>
         </div>
         <Card className="shadow-lg">

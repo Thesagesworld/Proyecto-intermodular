@@ -12,7 +12,7 @@ export function Gallery() {
             Galería Visual
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Mosaico para gráficos, mapas o infografías del proyecto.
+            Este es un mosaico donde presento los gráficos, mapas e infografías que he desarrollado para el proyecto.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

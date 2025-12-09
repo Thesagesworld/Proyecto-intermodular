@@ -63,7 +63,7 @@ export function Foda() {
             Análisis FODA
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Diagnóstico estratégico del municipio de Fuengirola.
+            He realizado un diagnóstico estratégico del municipio de Fuengirola, que presento a continuación.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

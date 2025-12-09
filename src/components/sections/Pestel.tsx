@@ -187,7 +187,7 @@ export function Pestel() {
             Análisis PESTEL
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-            La Costa del Sol es uno de los destinos más importantes del mundo. En 2023, el turismo generó un impacto económico directo de 19.138 millones de euros y más de 200.000 empleos. Este análisis nos permitirá estudiar el macroentorno del destino.
+            En mi análisis, estudio cómo los factores políticos, económicos, socioculturales, tecnológicos y medioambientales influyen en el macroentorno del destino.
           </p>
         </div>
         <Accordion type="single" collapsible className="w-full max-w-4xl mx-auto">
