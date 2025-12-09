@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { BarChart3, Building, Globe, Landmark, Laptop, Leaf } from 'lucide-react';
+import { BarChart3, Building, Globe, Landmark, Laptop, Leaf, AlertTriangle, CheckCircle, ExternalLink, MinusCircle } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -13,31 +13,47 @@ const pestelFactors = [
     icon: <Landmark className="h-8 w-8 text-primary" />,
     content: (
       <div className="space-y-6 text-muted-foreground">
-        <div>
-          <h4 className="font-semibold text-foreground mb-2">Factores Políticos</h4>
-          <p>
-            Los factores políticos hacen referencia a las decisiones y acciones de los distintos niveles de gobierno (nacional, autonómico, provincial y local) que influyen en la economía y en la actividad turística. En el caso de Benalmádena y la Costa del Sol, los principales son:
-          </p>
-          <ul className="list-disc pl-5 mt-2 space-y-1">
-            <li><strong>Estabilidad política del país y la región:</strong> España mantiene un contexto político relativamente estable y sigue apostando por el turismo como motor económico. Sin embargo, existen tensiones políticas relacionadas con la regulación del alojamiento turístico (VUT), que generan debates y posibles cambios normativos.</li>
-            <li><strong>Relaciones internacionales y acuerdos:</strong> Como miembro de la UE y la OMT, España adopta estrategias de sostenibilidad y turismo responsable que se aplican en destinos como Benalmádena.</li>
-            <li><strong>Impuestos y ayudas al sector turístico:</strong> El sector se beneficia de ayudas (fondos Next Generation, Estrategia España Turismo 2030) pero también se ve afectado por impuestos locales que impactan en la rentabilidad.</li>
-            <li><strong>Estrategias de desarrollo turístico:</strong> Planes a todos los niveles (nacional, andaluz, provincial y local) marcan la pauta hacia un turismo más digital y sostenible, como el Plan Estratégico de Calidad Turística de Benalmádena (2025–2030).</li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold text-foreground mb-2">Factores Legales</h4>
-           <p>
-            Engloban las leyes, normas y reglamentos que las empresas e instituciones turísticas deben cumplir para operar de forma segura y regulada. En 2025 destacan:
-          </p>
-          <ul className="list-disc pl-5 mt-2 space-y-1">
-            <li><strong>Leyes laborales:</strong> Cumplimiento del Estatuto de los Trabajadores, convenios colectivos, seguridad laboral y políticas de igualdad.</li>
-            <li><strong>Normas de alojamiento y calidad:</strong> Las empresas deben inscribirse en el Registro de Turismo de Andalucía (RTA) y cumplir requisitos de calidad, limpieza y accesibilidad. La Ley 6/2024 refuerza la coordinación autonómica.</li>
-            <li><strong>Regulaciones medioambientales:</strong> Normativas para proteger espacios naturales, gestionar residuos y reducir la contaminación. Los proyectos deben alinearse con la Estrategia de Sostenibilidad Turística.</li>
-            <li><strong>Normas de accesibilidad y seguridad:</strong> Obligatoriedad de adaptar espacios para personas con movilidad reducida y cumplir con normativas de seguridad contra incendios y aforo.</li>
-            <li><strong>Regulación de VUT y agencias:</strong> Las viviendas turísticas y agencias deben cumplir requisitos específicos, y las plataformas digitales tienen nuevas obligaciones fiscales y de transparencia.</li>
-          </ul>
-        </div>
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-xl flex items-center gap-2">
+              <Building className="h-5 w-5" />
+              Factores Políticos
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-3">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Estabilidad y Regulación</h4>
+              <p>Contexto político estable, pero con tensiones en la regulación de viviendas de uso turístico (VUT), generando cambios normativos frecuentes.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Acuerdos Internacionales</h4>
+              <p>Pertenencia a la UE y OMT, impulsando políticas de sostenibilidad, seguridad y libre circulación que benefician al destino.</p>
+            </div>
+             <div>
+              <h4 className="font-semibold text-foreground mb-1">Impuestos y Ayudas</h4>
+              <p>El sector se beneficia de fondos europeos (Next Generation) y estrategias nacionales, pero enfrenta impuestos locales que impactan la rentabilidad.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Estrategias de Desarrollo</h4>
+              <p>Alineación con planes de turismo sostenible a nivel nacional, autonómico y local, enfocados en digitalización y calidad.</p>
+            </div>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-xl flex items-center gap-2">
+              <Landmark className="h-5 w-5" />
+              Factores Legales
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-3">
+            <p><strong className="text-foreground">Leyes Laborales:</strong> Cumplimiento estricto de convenios, seguridad laboral y políticas de igualdad.</p>
+            <p><strong className="text-foreground">Normas de Calidad:</strong> Obligatoriedad de inscripción en el Registro de Turismo de Andalucía (RTA) y cumplimiento de estándares de calidad y accesibilidad.</p>
+            <p><strong className="text-foreground">Regulación Medioambiental:</strong> Adaptación a normativas de protección de espacios, gestión de residuos y sostenibilidad.</p>
+             <p><strong className="text-foreground">Seguridad y Accesibilidad:</strong> Leyes que garantizan espacios accesibles para todos y normativas de seguridad (incendios, aforo).</p>
+             <p><strong className="text-foreground">Regulación Específica:</strong> Control sobre VUT y agencias de viajes para proteger al consumidor y ordenar el mercado.</p>
+          </CardContent>
+        </Card>
       </div>
     ),
   },
@@ -45,15 +61,44 @@ const pestelFactors = [
     title: 'Económico',
     icon: <BarChart3 className="h-8 w-8 text-primary" />,
     content: (
-        <div className="space-y-4 text-muted-foreground">
-            <p>El PIB andaluz creció un 3,2% en 2024, impulsado por el consumo y el turismo, aunque se espera una desaceleración al 2,3% en 2025 debido a factores externos. A pesar de la mejora en la afiliación laboral, la tasa de paro sigue siendo una de las más altas de España.</p>
-            <p>Andalucía, con casi 8,7 millones de habitantes, es la región más poblada y la tercera economía de España, aportando el 13,3% del PIB nacional. El turismo tiene un gran peso, aunque depende menos del visitante internacional que la media española (54% de pernoctaciones extranjeras frente al 64% nacional en 2024).</p>
-             <div className="text-sm">
-                <p>Fuentes:</p>
-                <a href="https://www.caixabankresearch.com/es/publicaciones/fichas-comunidades-autonomas/andalucia" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">CaixaBank Research</a>
-                <br/>
-                <a href="https://www.exceltur.org/pib-turistico-espanol/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Exceltur</a>
-            </div>
+        <div className="space-y-4">
+            <Card>
+                <CardHeader>
+                    <CardTitle className="text-xl">Panorama Económico de Andalucía</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                    <div className="flex items-center gap-4 p-3 bg-accent/50 rounded-lg">
+                        <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0" />
+                        <div>
+                            <p className="font-semibold text-foreground">Crecimiento del PIB del 3,2% en 2024</p>
+                            <p className="text-sm text-muted-foreground">Impulsado por el consumo y el turismo.</p>
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-4 p-3 bg-accent/50 rounded-lg">
+                        <AlertTriangle className="h-6 w-6 text-orange-500 flex-shrink-0" />
+                        <div>
+                            <p className="font-semibold text-foreground">Desaceleración prevista al 2,3% en 2025</p>
+                            <p className="text-sm text-muted-foreground">Influenciado por factores externos y fondos europeos.</p>
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-4 p-3 bg-accent/50 rounded-lg">
+                        <MinusCircle className="h-6 w-6 text-red-500 flex-shrink-0" />
+                        <div>
+                            <p className="font-semibold text-foreground">Alta tasa de paro</p>
+                            <p className="text-sm text-muted-foreground">A pesar de la mejora en la afiliación laboral, sigue siendo un desafío clave.</p>
+                        </div>
+                    </div>
+                    <p className="text-muted-foreground pt-4">Andalucía es la tercera economía de España (13,3% del PIB nacional) y la región más poblada. El turismo tiene un gran peso, aunque con menor dependencia del visitante internacional que la media nacional.</p>
+                     <div className="text-sm flex gap-4 mt-4">
+                        <a href="https://www.caixabankresearch.com/es/publicaciones/fichas-comunidades-autonomas/andalucia" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-primary hover:underline">
+                            <ExternalLink className="h-4 w-4" /> CaixaBank Research
+                        </a>
+                        <a href="https://www.exceltur.org/pib-turistico-espanol/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-primary hover:underline">
+                           <ExternalLink className="h-4 w-4" /> Exceltur
+                        </a>
+                    </div>
+                </CardContent>
+            </Card>
         </div>
     )
   },
@@ -62,8 +107,26 @@ const pestelFactors = [
     icon: <Globe className="h-8 w-8 text-primary" />,
     content: (
         <div className="space-y-4 text-muted-foreground">
-            <p>Benalmádena es un destino con un marcado carácter internacional, atrayendo principalmente a turistas del Reino Unido, seguidos de españoles, nórdicos, alemanes y franceses. El perfil del visitante es variado: desde el tradicional turista de "sol y playa" hasta un creciente interés por el turismo cultural, familiar y senior.</p>
-            <p>El comportamiento del turista ha evolucionado hacia lo digital, utilizando internet para reservas y redes sociales para compartir experiencias, lo que obliga al destino a modernizar su oferta de servicios. A nivel local, existe una relación ambivalente con el turismo: se valora su impacto económico positivo, pero también genera preocupación por la masificación estival y la presión sobre el mercado de la vivienda. Esto ha llevado a las administraciones a buscar un equilibrio mediante la regulación de las viviendas turísticas (VUT) y campañas de turismo responsable.</p>
+             <Card>
+                <CardHeader>
+                    <CardTitle className="text-xl">Perfil del Turista y Comportamiento</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                    <p><strong className="text-foreground">Carácter Internacional:</strong> Fuerte presencia de turistas del Reino Unido, seguidos de españoles, nórdicos y franceses.</p>
+                    <p><strong className="text-foreground">Evolución del Interés:</strong> Transición del "sol y playa" hacia el turismo cultural, familiar, senior y de experiencias únicas.</p>
+                    <p><strong className="text-foreground">Comportamiento Digital:</strong> Uso generalizado de internet y redes sociales para reservas, consultas y compartir experiencias, impulsando la digitalización del destino.</p>
+                </CardContent>
+            </Card>
+             <Card>
+                <CardHeader>
+                    <CardTitle className="text-xl">Relación con la Comunidad Local</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                     <p><strong className="text-foreground">Visión Positiva:</strong> El turismo es valorado por generar empleo y dinamismo económico.</p>
+                     <p><strong className="text-foreground">Preocupaciones:</strong> La masificación estival y la presión sobre el mercado de la vivienda generan inquietud entre los residentes.</p>
+                     <p><strong className="text-foreground">Acciones de Equilibrio:</strong> Las administraciones buscan regular las VUT y promover un turismo responsable para garantizar la convivencia.</p>
+                </CardContent>
+            </Card>
         </div>
     )
   },
@@ -71,10 +134,26 @@ const pestelFactors = [
     title: 'Tecnológico',
     icon: <Laptop className="h-8 w-8 text-primary" />,
     content: (
-       <div className="text-muted-foreground">
-        <p>
-            El grado de digitalización en Benalmádena ha aumentado significativamente. Hoteles, restaurantes y atracciones utilizan páginas web, apps y códigos QR para facilitar reservas e información interactiva. La inteligencia artificial también emerge a través de chatbots de asistencia. Sin embargo, aún existen áreas de mejora, como la falta de mantenimiento de infraestructuras digitales públicas (pantallas de información desactivadas), lo que evidencia que, aunque la tecnología está presente, su aprovechamiento no es total.
-        </p>
+       <div className="space-y-4 text-muted-foreground">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-xl">Digitalización en el Destino</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+             <div className="flex items-start gap-4">
+                <CheckCircle className="h-5 w-5 text-green-600 mt-1" />
+                <p>Alto grado de digitalización en hoteles y restaurantes mediante webs, apps y códigos QR para facilitar reservas e información interactiva.</p>
+             </div>
+             <div className="flex items-start gap-4">
+                <CheckCircle className="h-5 w-5 text-green-600 mt-1" />
+                <p>Uso emergente de IA a través de chatbots de asistencia al turista.</p>
+             </div>
+              <div className="flex items-start gap-4">
+                <AlertTriangle className="h-5 w-5 text-orange-500 mt-1" />
+                <p>Infraestructuras digitales públicas (pantallas informativas) a menudo desactivadas, mostrando un aprovechamiento tecnológico incompleto.</p>
+              </div>
+          </CardContent>
+        </Card>
        </div>
     )
   },
@@ -83,8 +162,17 @@ const pestelFactors = [
     icon: <Leaf className="h-8 w-8 text-primary" />,
     content: (
         <div className="space-y-4 text-muted-foreground">
-            <p>España, y en particular Andalucía, enfrenta graves desafíos medioambientales como la desertización y la contaminación del agua. La región ha soportado seis años de sequía, con embalses al 21% de su capacidad a principios de 2024, lo que ha llevado a restricciones en el uso del agua que afectan directamente al sector turístico (piscinas, duchas públicas, riego).</p>
-            <p>La presión sobre los recursos hídricos se ve agravada por la expansión de cultivos subtropicales como el aguacate en la Axarquía, que demandan grandes cantidades de agua. El cambio climático intensifica estos problemas con fenómenos meteorológicos extremos, convirtiendo la gestión del agua en una prioridad urgente para la sostenibilidad del turismo en la Costa del Sol.</p>
+             <Card>
+                <CardHeader>
+                    <CardTitle className="text-xl">Desafíos Climáticos y de Recursos</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                    <p><strong className="text-foreground">Desertización y Contaminación:</strong> España, especialmente el sur, enfrenta un riesgo severo de desertización y problemas de contaminación del agua.</p>
+                    <p><strong className="text-foreground">Crisis Hídrica en Andalucía:</strong> Seis años de sequía han dejado los embalses a un 21% de capacidad, llevando a restricciones que afectan directamente al sector turístico (piscinas, duchas, riego).</p>
+                    <p><strong className="text-foreground">Presión Agrícola:</strong> La expansión de cultivos subtropicales como el aguacate en la Axarquía agrava la escasez de agua.</p>
+                    <p><strong className="text-foreground">Cambio Climático:</strong> Fenómenos meteorológicos extremos intensifican los problemas, convirtiendo la gestión del agua en una prioridad crítica.</p>
+                </CardContent>
+            </Card>
         </div>
     )
   },
