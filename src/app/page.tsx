@@ -2,6 +2,12 @@ import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, HelpCircle } from 'lucide-react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 
 export default function Home() {
   return (
@@ -26,15 +32,23 @@ export default function Home() {
         </Card>
 
         <Card className="mt-8 w-full text-left shadow-md">
-           <CardHeader className="flex flex-row items-center gap-4">
-            <HelpCircle className="h-6 w-6 text-primary" />
-            <CardTitle>El porqué de este proyecto</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground">
-             
-            </p>
-          </CardContent>
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1" className="border-none">
+              <AccordionTrigger className="hover:no-underline p-6">
+                <CardHeader className="flex flex-row items-center gap-4 p-0">
+                  <HelpCircle className="h-6 w-6 text-primary" />
+                  <CardTitle>El porqué de este proyecto</CardTitle>
+                </CardHeader>
+              </AccordionTrigger>
+              <AccordionContent>
+                <CardContent className="pt-0">
+                  <p className="text-muted-foreground">
+                    El motivo de este proyecto nace de la necesidad de darle un nuevo enfoque al destino y hacerlo más atractivo para el público actual. Para conseguirlo, es importante investigar bien y analizar la situación utilizando herramientas como el PESTEL, el DAFO o el ciclo de vida del destino. Como estamos trabajando con un lugar que ya existe, lo que buscamos es ver cómo aprovechar lo que ya tiene, detectar sus puntos fuertes y sus carencias, y a partir de ahí proponer mejoras que realmente aporten valor y lo hagan destacar.
+                  </p>
+                </CardContent>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </Card>
 
         <Link href="/pestel" passHref>
