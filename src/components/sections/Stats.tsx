@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Users, Hotel, Euro, MapPin, Plane, BarChart3, Globe, Smartphone, Building, LineChart } from 'lucide-react';
+import { Users, Euro, MapPin, Plane, BarChart3, Globe, Smartphone, Building, LineChart, TrendingUp, DollarSign } from 'lucide-react';
 
 const topCountries = [
   { name: 'Francia', visitors: '100 millones' },
@@ -60,17 +60,38 @@ export function Stats() {
                       </ul>
                     </CardContent>
                 </Card>
-                 <Card className="lg:col-span-3">
+                <Card className="lg:col-span-3">
                     <CardHeader>
                       <CardTitle>Crecimiento Económico Global – PIB Internacional 2024</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
-                      <div className="flex items-start gap-4">
-                        <BarChart3 className="h-7 w-7 text-secondary mt-1 flex-shrink-0" />
-                        <div>
-                          <p className="text-muted-foreground">En 2024, el producto interior bruto (PIB) mundial se situó en torno a los <span className="font-bold">111 billones de dólares</span>, con una tasa de crecimiento global cercana al 3 %. Estos datos reflejan una moderada recuperación económica en un contexto de desafíos como la inflación, las tensiones geopolíticas y las secuelas de la pandemia, mostrando que, a pesar de las dificultades, la economía internacional mantiene una tendencia de crecimiento estable.</p>
+                        <p className="text-muted-foreground">
+                            Los datos reflejan una moderada recuperación económica en un contexto de desafíos como la inflación y las tensiones geopolíticas, mostrando que, a pesar de las dificultades, la economía internacional mantiene una tendencia de crecimiento estable.
+                        </p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <Card className="bg-accent/50">
+                                <CardContent className="flex items-center gap-4 p-4">
+                                    <div className="bg-primary/10 p-3 rounded-full">
+                                        <DollarSign className="h-6 w-6 text-primary" />
+                                    </div>
+                                    <div>
+                                        <p className="text-2xl font-bold">111T $</p>
+                                        <p className="text-sm text-muted-foreground">PIB mundial</p>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                            <Card className="bg-accent/50">
+                                <CardContent className="flex items-center gap-4 p-4">
+                                    <div className="bg-green-500/10 p-3 rounded-full">
+                                        <TrendingUp className="h-6 w-6 text-green-600" />
+                                    </div>
+                                    <div>
+                                        <p className="text-2xl font-bold">~3%</p>
+                                        <p className="text-sm text-muted-foreground">Crecimiento global</p>
+                                    </div>
+                                </CardContent>
+                            </Card>
                         </div>
-                      </div>
                     </CardContent>
                 </Card>
             </div>
@@ -169,4 +190,3 @@ export function Stats() {
       </div>
     </section>
   );
-}
