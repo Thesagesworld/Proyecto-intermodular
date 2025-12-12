@@ -62,14 +62,13 @@ export function Stats() {
                 </Card>
                  <Card className="lg:col-span-3">
                     <CardHeader>
-                      <CardTitle>Crecimiento Económico Global</CardTitle>
+                      <CardTitle>Crecimiento Económico Global – PIB Internacional 2024</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div className="flex items-start gap-4">
                         <BarChart3 className="h-7 w-7 text-secondary mt-1 flex-shrink-0" />
                         <div>
-                          <h3 className="font-semibold text-foreground">PIB Internacional 2024</h3>
-                          <p className="text-muted-foreground">Se situó en torno a los <span className="font-bold">111 billones de dólares</span>, con una tasa de crecimiento mundial que rondó el 3%.</p>
+                          <p className="text-muted-foreground">En 2024, el producto interior bruto (PIB) mundial se situó en torno a los <span className="font-bold">111 billones de dólares</span>, con una tasa de crecimiento global cercana al 3 %. Estos datos reflejan una moderada recuperación económica en un contexto de desafíos como la inflación, las tensiones geopolíticas y las secuelas de la pandemia, mostrando que, a pesar de las dificultades, la economía internacional mantiene una tendencia de crecimiento estable.</p>
                         </div>
                       </div>
                     </CardContent>
