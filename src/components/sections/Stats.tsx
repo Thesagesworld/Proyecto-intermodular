@@ -66,7 +66,7 @@ export function Stats() {
                     </CardHeader>
                     <CardContent className="space-y-4">
                         <p className="text-muted-foreground">
-                            Los datos reflejan una moderada recuperación económica en un contexto de desafíos como la inflación y las tensiones geopolíticas, mostrando que, a pesar de las dificultades, la economía internacional mantiene una tendencia de crecimiento estable.
+                            Los datos reflejan una <span className="font-semibold text-foreground">moderada recuperación económica</span> en un contexto de desafíos como la <span className="font-semibold text-foreground">inflación</span> y las <span className="font-semibold text-foreground">tensiones geopolíticas</span>, mostrando que, a pesar de las dificultades, la economía internacional mantiene una tendencia de <span className="font-semibold text-foreground">crecimiento estable</span>.
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <Card className="bg-accent/50">
@@ -190,3 +190,5 @@ export function Stats() {
       </div>
     </section>
   );
+}
+    
