@@ -15,6 +15,7 @@ import {
   Menu,
   X,
   Sun,
+  ClipboardList,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -25,6 +26,7 @@ const navLinks = [
   { href: '/datos', label: 'Datos', icon: <PieChart /> },
   { href: '/competencia', label: 'Competencia', icon: <Users /> },
   { href: '/comunicacion', label: 'Comunicación', icon: <MessageCircle /> },
+  { href: '/investigacion', label: 'Investigación', icon: <ClipboardList /> },
   { href: '/galeria', label: 'Galería', icon: <Image /> },
   { href: '/foda', label: 'FODA', icon: <Library /> },
   { href: '/conclusiones', label: 'Conclusiones', icon: <FileText /> },
@@ -52,7 +54,7 @@ export function Header() {
           <span className="font-bold sm:inline-block text-lg">Proyecto</span>
         </Link>
 
-        <nav className="hidden md:flex items-center space-x-2">
+        <nav className="hidden md:flex items-center space-x-1">
           {navLinks.map((link) => (
             <Link
               key={link.href}
