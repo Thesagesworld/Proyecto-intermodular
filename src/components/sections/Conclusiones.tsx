@@ -19,11 +19,16 @@ export function Conclusiones() {
             <CardTitle>Reflexión Personal</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="space-y-3">
-                <div className="bg-gray-200 h-4 w-full rounded-md animate-pulse"></div>
-                <div className="bg-gray-200 h-4 w-5/6 rounded-md animate-pulse"></div>
-                <div className="bg-gray-200 h-4 w-full rounded-md animate-pulse"></div>
-                <div className="bg-gray-200 h-4 w-4/6 rounded-md animate-pulse"></div>
+            <div className="space-y-2 text-muted-foreground">
+              <p>
+                Benalmádena, con su gran oferta turística, se enfrenta al reto de equilibrar su éxito con la sostenibilidad, especialmente ante la crisis hídrica y la masificación.
+              </p>
+              <p>
+                Para seguir siendo competitivo, el destino debe mejorar su estrategia digital, que actualmente muestra un bajo engagement, y diversificar su modelo para reducir la estacionalidad.
+              </p>
+              <p>
+                Es crucial gestionar los recursos de forma más eficiente y mejorar la convivencia entre turistas y residentes para asegurar su futuro.
+              </p>
             </div>
           </CardContent>
         </Card>
