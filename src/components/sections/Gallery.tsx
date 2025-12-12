@@ -4,8 +4,9 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Gallery() {
   const fodaImage = PlaceHolderImages.find((img) => img.id === 'foda-analysis');
+  const comunicacionImage = PlaceHolderImages.find((img) => img.id === 'comunicacion-analysis');
   
-  const galleryItems = fodaImage ? [fodaImage] : [];
+  const galleryItems = [fodaImage, comunicacionImage].filter(Boolean) as any[];
 
 
   return (
@@ -20,17 +21,17 @@ export function Gallery() {
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {galleryItems.map((item, index) => (
-            <Card key={item.id} className="overflow-hidden group">
-              <CardContent className="flex aspect-square items-center justify-center p-0 bg-background hover:bg-card transition-colors">
+          {galleryItems.map((item) => (
+            <Card key={item.id} className="overflow-hidden group col-span-2">
+              <CardContent className="flex aspect-video items-center justify-center p-0 bg-background hover:bg-card transition-colors">
                  <div className="relative h-full w-full">
                     <Image
                       src={item.imageUrl}
                       alt={item.description}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="object-contain group-hover:scale-105 transition-transform duration-300"
                       data-ai-hint={item.imageHint}
-                      sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 25vw"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                     />
                     <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                       <p className="text-white text-center p-2 text-sm">{item.description}</p>

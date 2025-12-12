@@ -11,6 +11,12 @@
       "description": "Imagen del análisis FODA para Benalmádena.",
       "imageUrl": "https://storage.googleapis.com/stabl-media/6945532598377545969/6945595350354108657.png",
       "imageHint": "analysis chart"
+    },
+    {
+      "id": "comunicacion-analysis",
+      "description": "Imagen del análisis de comunicación para Benalmádena.",
+      "imageUrl": "https://storage.googleapis.com/stabl-media/6945532598377545969/6945638421868314865.png",
+      "imageHint": "social media chart"
     }
   ]
 }
